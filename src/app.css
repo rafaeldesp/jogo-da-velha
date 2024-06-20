@@ -1,0 +1,79 @@
+.board-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.board button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 170px;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border: 1px solid transparent;
+}
+
+.board button::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.board button:hover {
+    border-color: #fff;
+}
+
+p {
+    text-align: center;
+}
+
+.winner {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.reset button{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 200px;
+    transition: border-color 0.25s;
+}
+
+.reset button:hover {
+    border-color: #fff;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.player {
+    font-size: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 610px) {
+    .board button {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 351px) {
+    .board button {
+        font-size: 70px;
+    }
+}
